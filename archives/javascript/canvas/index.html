@@ -1,0 +1,42 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //CONST
+            const CANV_WID = 800;
+            const CANV_HEI = 600;
+
+            //VAR
+
+            //SETUP
+            var canvas = document.createElement("canvas");
+            canvas.width = CANV_WID;
+            canvas.height = CANV_HEI;
+            document.body.append(canvas);
+            var c = canvas.getContext("2d");
+
+            window.addEventListener("load", function() {
+                window.requestAnimationFrame(main);
+            });
+
+            //MAIN
+            function main() {
+                update();
+                draw();
+                window.requestAnimationFrame(main);
+
+            }
+
+            //UPDATE
+            function update() {
+
+            }
+
+            //DRAW
+            function draw() {
+
+            }
+
+        </script>
+    </body>
+</html>
