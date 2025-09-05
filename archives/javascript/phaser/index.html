@@ -1,0 +1,94 @@
+<html>
+    <head></head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/phaser3@0.4.34/dist/phaser.min.js"></script>
+        <script>
+            const config = {
+                type: Phaser.AUTO, // Rendering context (default: Phaser.AUTO)
+                width: 800, // Width of the game canvas (default: 800)
+                height: 600, // Height of the game canvas (default: 600)
+                backgroundColor: '#000000', // Background color (default: '#000000')
+            
+                parent: '', // HTML element where the game will be placed (default: '')
+            
+                scene: [Scene], // An array of scenes to load (default: [])
+            
+                physics: {
+                    default: 'arcade', // Physics system to use (default: 'arcade')
+                    arcade: {
+                        gravity: { x: 0, y: 0 }, // Global gravity in Arcade Physics (default: { x: 0, y: 0 })
+                        debug: false, // Set to true for debugging collision boxes (default: false)
+                    },
+                },
+            
+                input: {
+                    keyboard: true, // Enable keyboard input (default: true)
+                    mouse: true, // Enable mouse input (default: true)
+                    touch: true, // Enable touch input (default: true)
+                    gamepad: false, // Enable gamepad input (default: false)
+                },
+            
+                render: {
+                    pixelArt: false, // Render pixel art crisply (default: false)
+                    antialias: true, // Apply antialiasing (default: true)
+                },
+            
+                plugins: {
+                    global: [], // Global plugins (default: [])
+                    scene: [], // Scene-specific plugins (default: [])
+                },
+            
+                scale: {
+                    mode: Phaser.Scale.NONE, // Scale mode (default: Phaser.Scale.NONE)
+                    width: 800, // Width of the game (default: 800)
+                    height: 600, // Height of the game (default: 600)
+                    autoCenter: Phaser.Scale.CENTER_BOTH, // Center the game canvas (default: Phaser.Scale.CENTER_BOTH)
+                },
+            
+                banner: {
+                    text: '#ffffff', // Text color (default: '#ffffff')
+                    background: ['#ff0000', '#000000'], // Background gradient (default: ['#ff0000', '#000000'])
+                    hidePhaser: false, // Show the Phaser logo (default: false)
+                },
+            
+                dom: {
+                    createContainer: true, // Automatically create a DOM container (default: true)
+                },
+            
+                autoFocus: true, // Automatically focus the game canvas (default: true)
+            
+                fps: {
+                    min: 10, // Minimum FPS (default: 10)
+                    target: 60, // Target FPS (default: 60)
+                    forceSetTimeOut: false, // Force using setTimeout for the render loop (default: false)
+                }
+            }
+            class Scene extends Phaser.Scene {
+                constructor() {
+                    super('scene')
+                }
+            
+                // Initialization code here
+                init() {
+                    
+                }
+            
+                // Preload assets here
+                preload() {
+                    
+                }
+            
+                // Create game objects and set up the scene here
+                create() {
+                    
+                }
+            
+                // Update game logic each frame here
+                update() {
+                    
+                }
+            }
+            var game = new Phaser.Game(config);
+        </script>
+    </body>
+</html>
